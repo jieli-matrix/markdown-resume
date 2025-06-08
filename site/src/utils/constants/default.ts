@@ -20,17 +20,18 @@ export const DEFAULT_STYLES = {
 } as ResumeStyles;
 
 export const DEFAULT_MD_CONTENT = `---
+name: Bruce Wayne
+header:
+  - text: |
+      <span style="font-size: 1.2em; font-weight: bold;">Applying for: Senior Cook </span>
+  - text: <span class="iconify" data-icon="tabler:phone"></span> (+1) 123-456-7890
+    newLine: true
+  - text: <span class="iconify" data-icon="tabler:mail"></span> email@example.com
+    link: mailto:mail@example.com
+  - text: <span class="iconify" data-icon="tabler:brand-github"></span> github.com/example
+    link: https://github.com/example
+  
 ---
-
-# Bruce Wayne
-
-<span class="iconify" data-icon="charm:person"></span> [example.com](https://example.com/)
-  : <span class="iconify" data-icon="tabler:brand-github"></span> [github.com/example](https://github.com/example)
-  : <span class="iconify" data-icon="tabler:phone"></span> [(+1) 123-456-7890](https://wa.me/11234567890)
-
-<span class="iconify" data-icon="ic:outline-location-on"></span> 1234 Abc Street, Example, EX 01234
-  : <span class="iconify" data-icon="tabler:brand-linkedin"></span> [linkedin.com/in/example](https://linkedin.com/in/example/)
-  : <span class="iconify" data-icon="tabler:mail"></span> [email@example.com](mailto:mail@example.com)
 
 ## Experience
 
@@ -160,7 +161,6 @@ ${PREVIEW_SELECTOR} h3 {
   font-size: 1.2em;
 }
 
-${PREVIEW_SELECTOR} h1,
 ${PREVIEW_SELECTOR} h2 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
@@ -214,6 +214,7 @@ ${PREVIEW_SELECTOR} img {
 
 ${PREVIEW_SELECTOR} .resume-header {
   text-align: center;
+  position: relative;
 }
 
 ${PREVIEW_SELECTOR} .resume-header h1 {
@@ -224,6 +225,26 @@ ${PREVIEW_SELECTOR} .resume-header h1 {
 
 ${PREVIEW_SELECTOR} .resume-header-item:not(.no-separator)::after {
   content: " | ";
+}
+
+/* Avatar */
+
+${PREVIEW_SELECTOR} .resume-avatar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  z-index: 10;
+}
+
+${PREVIEW_SELECTOR} .resume-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  display: block;
 }
 
 /* Citations */

@@ -40,6 +40,7 @@ export type ResumeHeaderItem = {
 export type ResumeFrontMatter = {
   readonly name?: string;
   readonly header?: Array<ResumeHeaderItem>;
+  readonly avatar?: string;
 };
 
 export type Font = {
@@ -53,6 +54,7 @@ export type ResumeStorageItem = {
   css: string;
   styles: ResumeStyles;
   update: string;
+  avatar?: string;
 };
 
 export type ResumeStorage = {

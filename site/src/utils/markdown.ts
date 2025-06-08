@@ -44,6 +44,11 @@ const resolveDeflist = (html: string) => {
 const resolveHeader = (html: string, frontmatter: ResumeFrontMatter) => {
   let header = "";
 
+  // Add avatar if provided
+  if (frontmatter.avatar) {
+    header += `<div class="resume-avatar"><img src="${frontmatter.avatar}" alt="Avatar" /></div>\n`;
+  }
+
   if (frontmatter.name) header += `<h1>${frontmatter.name}</h1>\n`;
 
   if (frontmatter.header) {

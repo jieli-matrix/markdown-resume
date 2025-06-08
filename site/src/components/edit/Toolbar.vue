@@ -13,6 +13,11 @@ const sections = [
     component: <File id="toolbar-file" />
   },
   {
+    name: "avatar",
+    icon: "i-mdi:account-circle",
+    component: <Avatar id="toolbar-avatar" />
+  },
+  {
     name: "paper",
     icon: "i-majesticons:paper-fold-line",
     component: <Paper id="toolbar-paper" />

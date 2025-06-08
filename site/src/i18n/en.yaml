@@ -54,6 +54,12 @@ toolbar:
   margin: Margin
   vertical: Top & Bottom
   horizontal: Left & Right
+  avatar:
+    text: Avatar
+    upload: Upload Image
+    clear: Clear Avatar
+    preview: Preview
+    no_avatar: No avatar selected
 
 notification:
   save: Your changes have been saved

@@ -1,20 +1,31 @@
-<h1 align="center">Markdown Resume</h1>
+<h1 align="center">Markdown Resume with Avatar Support</h1>
 
-<p align="center">Write an ATS-friendly Resume in Markdown. Available for anyone, Optimized for Dev.</p>
+<p align="center">Write an ATS-friendly Resume in Markdown. Available for anyone, Optimized for Dev & Avatar Support.</p>
 
 <p align="center"><a href="https://www.junian.dev/markdown-resume/"><strong>Start Writing Now</strong></a>!</p>
 
-<img align="center" src="https://raw.githubusercontent.com/junian/markdown-resume/assets/img/markdown-resume-screenshot-00.jpg"/>
+<img align="center" src="cvs/Markdown-Resume-Screenshot.png"/>
 
 ## About
 
-A fork of "Oh My CV!". You can visit the original work [here](https://ohmycv.app/).
+A fork of "Oh My CV!" by junian. You can visit the original work [here](https://www.junian.dev/markdown-resume/).
 
-Changes I made from the original work:
-- Default template is now as close as possible with [CareerCup's](https://www.careercup.com/resume) resume template.
-- Default color is all Black.
-- Added Web-safe fonts for easier ATS parsing.
-- And many more ...
+## Avatar Support
+
+This fork introduces a new **Avatar Support** feature that allows you to personalize your resume with a professional photo. Here's what's new:
+
+- **Easy Avatar Upload**: Click the avatar icon in the toolbar to upload and display your personal photo in the top-right corner of your resume
+- **Perfect Alignment**: The avatar is automatically aligned with your name for a professional appearance
+- **Square Format**: Optimized for square personal photos that maintain their aspect ratio
+- **Local Storage**: Your uploaded avatar is stored locally in your browser for privacy and convenience
+
+### Example Avatar
+
+An example avatar (`cvs/avatar.svg`) is included in the repository to demonstrate the feature.
+
+### Important Note
+
+⚠️ **The [Start Writing Now](https://www.junian.dev/markdown-resume/) online version does not currently support the avatar feature**, as these changes have not yet been deployed to the website. To use the avatar functionality, you'll need to clone this repository and run it locally following the development instructions below.
 
 ## Notice
 
@@ -24,6 +35,7 @@ Highly recommend using Chromium-based browsers, e.g., [Chrome](https://www.googl
 
 - Write your resume in Markdown and preview it in real-time, it's smooth!
 - It works offline ([PWA](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps))
+- It supports avatar upload.
 - Export to A4 and US Letter size PDFs
 - Customize page margins, theme colors, line heights, fonts, etc.
 - Pick any fonts from [Google Fonts](https://fonts.google.com/)
@@ -72,13 +84,10 @@ pnpm build
 
 ## Credits
 
-- The original work: [Renovamen/oh-my-cv](https://github.com/Renovamen/oh-my-cv)
+- The `oh-my-cv` work: [Renovamen/oh-my-cv](https://github.com/Renovamen/oh-my-cv)
+- The origin work: [junian/markdown-resume](https://github.com/junian/markdown-resume)
 - [billryan/resume](https://github.com/billryan/resume)
 
 ## License
 
 This project is licensed under [MIT](LICENSE) license.
-
----
-
-Made with ☕ by [Junian.dev](https://www.junian.dev).
